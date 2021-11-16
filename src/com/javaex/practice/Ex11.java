@@ -19,10 +19,10 @@ public class Ex11 {
 			case "o" :
 			case "u" :	
 				System.out.println("모음입니다.");
-			break;
+				break;
 			default :
 				System.out.println("자음입니다.");
-			break;	
+				break;	
 		}
 		
 		sc.close();

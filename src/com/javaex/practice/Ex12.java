@@ -18,27 +18,28 @@ public class Ex12 {
         System.out.print("숫자2: ");
 	    int num2 = sc.nextInt();
 	    
-	    
-	    switch (sign) {
-	    	case "+" :
-	    		System.out.println("결과는: " + (double)(num1+num2));
-	        break;
-	        
-	    	case "-" :
-	    		System.out.println("결과는: " + (double)(num1-num2));
-	        break;
-	        
-	    	case "*" :
-	    		System.out.println("결과는: " + (double)(num1*num2));
-	    	break;
-	    	
-	    	case "/" :
-	    	    if(num2>0) {
-	    	    	System.out.println("결과는: " + ((double)num1/(double)num2));
-	    	    }else {
-	    	    	System.out.println("계산할 수 없습니다.");
-	    	    }
-	    	break;    
+	    if(num1>num2) {
+		    switch (sign) {
+		    	case "+" :
+		    		System.out.println("결과는: " + (double)(num1+num2));
+		        break;
+		        
+		    	case "-" :
+		    		System.out.println("결과는: " + (double)(num1-num2));
+		        break;
+		        
+		    	case "*" :
+		    		System.out.println("결과는: " + (double)(num1*num2));
+		    	break;
+		    	
+		    	case "/" :
+		    	    if(num2>0) {
+		    	    	System.out.println("결과는: " + ((double)num1/(double)num2));
+		    	    }else {
+		    	    	System.out.println("계산할 수 없습니다.");
+		    	    }
+		    	break;    
+		    }
 	    }
 	    
 	/*  if(sign == "+") {
